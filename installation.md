@@ -70,4 +70,7 @@ $array=[
 
 **Note !!**
 
-All route must add route name
+All route must add route name like : <br/>
+```php
+Route::get('myroute', 'Controller@index')->name('myroute');
+```
