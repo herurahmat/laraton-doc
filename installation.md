@@ -40,7 +40,7 @@ Open the file ```app/Config/global.php```
 - Navigation User Group <br/>
 Add the file for [User Group](user/group#groupname) in ```app/Config/Navigation``` <br/>
 Create format array : <br/>
-
+```php
 $array=[
 	'Title of Menu' => [
 		's1'=>'Segment One',
@@ -48,4 +48,5 @@ $array=[
 		's3'=>'Segment Three',//Optional
 	]
 ];
+```
 
