@@ -43,10 +43,31 @@ Create format array : <br/>
 ```php
 $array=[
 	'Title of Menu' => [
-		's1'=>'Segment One',
-		's2'=>'Segment Two', //(Optional)
-		's3'=>'Segment Three',//Optional
+		's1' => 'Segment One',
+		's2' => 'Segment Two', //(Optional)
+		's3' => 'Segment Three',//Optional,
+		'icon' => 'icon like fontawesome or other',
+		'child' => [
+			'Sub Menu' => [
+				'icon' => 'Icon',
+				'route' => 'name of route'
+			]
+		]
+	]
+];
+```
+For Single Menu <br/>
+```php
+$array=[
+	'Title of Menu' => [
+		's1' => 'Segment One',
+		's2' => 'Segment Two', //(Optional)
+		's3' => 'Segment Three',//Optional,
+		'route' => 'name of route'
 	]
 ];
 ```
 
+**Note !!**
+
+All route must add route name
