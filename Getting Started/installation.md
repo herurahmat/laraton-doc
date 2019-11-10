@@ -2,7 +2,7 @@
 
 - [Installation](#installation)
 	- [Requirements](#requirements)
-    - [Installing Laravel-DataTables](#installing-laraton)
+    - [Installing Laraton](#installing-laraton)
     - [Configuration](#configuration)
 
 <a name="installation"></a>
@@ -20,10 +20,10 @@
 
 - Git Clone https://github.com/herurahmat/laraton.git
 - Run `composer install`
-- Copy `.env` file from `.env.example` using command `cp .env.example .env` then make some configs in `.env` file (please check `Config .env` Section)
-- Make sure `DB_DATABASE` is set correctly in `.env` file then run `php artisan migrate`
+- Copy `.env` file from `.env.example` menggunakan command `cp .env.example .env` dan membuat file `.env`
+- Set database pada `DB_DATABASE` pada file `.env` dan lakukan command `php artisan migrate`
 - Run php artisan db:seed
-- If migration is failed, please run `composer dump-autoload` first and remove any table(s) in database before execute migrate again
+- Jika migrasi database gagal, jalankan command `composer dump-autoload` lalu hapus table
 
 
 <a name="configuration"></a>
@@ -38,8 +38,8 @@ Open the file ```app/Config/global.php```
 	- upload_path
 	- thumbnail_size
 - Navigation User Group <br/>
-Add the file for [User Group](user/group#groupname) in ```app/Config/Navigation``` <br/>
-Create format array : <br/>
+Tambah file pada [User Group](user/group#groupname) in ```app/Config/Navigation``` <br/>
+Buat format array : <br/>
 ```php
 $array=[
 	'Title of Menu' => [
@@ -56,7 +56,7 @@ $array=[
 	]
 ];
 ```
-For Single Menu <br/>
+Menu Single <br/>
 ```php
 $array=[
 	'Title of Menu' => [
@@ -70,7 +70,7 @@ $array=[
 
 **Note !!**
 
-All route must add route name like : <br/>
+Route harus diberi nama seperti berikut : <br/>
 ```php
 Route::get('myroute', 'Controller@index')->name('myroute');
 ```
